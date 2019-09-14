@@ -1,0 +1,33 @@
+https://medium.com/@monkeytypewritr/building-your-own-keyboard-from-scratch-bd0638c40850
+
+https://en.wikipedia.org/wiki/Rollover_(key)
+
+https://brianlee.blog/2018/11/23/guide-keyboard-construction-explained/
+
+https://www.instructables.com/id/PCB-Keypadgamepad/
+
+how keyboard matrix work
+http://pcbheaven.com/wikipages/How_Key_Matrices_Works/
+
+
+
+
+Keyboard Diode alternatives
+https://www.40percent.club/2016/07/diodes.html
+
+
+
+BOM
+
+Schottky Diodes - 
+https://www.mouser.com/ProductDetail/ON-Semiconductor-Fairchild/SS16HE?qs=sGAEpiMZZMudZehw8RjeZSOgQqYE1kMUfYbtj7u%2FGzM%3D
+
+
+Tutorial on how to do a keyboard in kicad
+https://deskthority.net/wiki/KiCAD_keyboard_PCB_design_guide
+
+
+
+DevBoard
+https://www.st.com/en/evaluation-tools/32l476gdiscovery.html
+

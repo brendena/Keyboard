@@ -1,0 +1,7 @@
+Look into POR - Has a built in POR/PDR because it has a build in BOR - brown-out-reset.
+So i don't have to connect power to NRST pins
+
+Settup SerialWire Connector -Should be fine??
+
+
+Need to add capacitors to the power lines.
