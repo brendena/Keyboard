@@ -1,0 +1,1602 @@
+EESchema Schematic File Version 4
+LIBS:4_4Keyboard-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "4x4 Keyboard"
+Date "2019-09-13"
+Rev "V.1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Author:Brenden Adamczak"
+$EndDescr
+Text Label 1800 3650 0    50   ~ 0
+ROW_0
+Text Label 1800 3750 0    50   ~ 0
+ROW_1
+Text Label 1800 4150 0    50   ~ 0
+ROW_2
+Text Label 1800 4250 0    50   ~ 0
+ROW_3
+Text Label 1800 4350 0    50   ~ 0
+ROW_4
+Text Label 3750 2450 0    50   ~ 0
+COL_1
+Text Label 3750 2550 0    50   ~ 0
+COL_2
+Text Label 3750 2650 0    50   ~ 0
+COL_3
+Text Label 1800 4450 0    50   ~ 0
+COL_0
+Wire Wire Line
+	3550 2450 3750 2450
+Wire Wire Line
+	3550 2550 3750 2550
+Wire Wire Line
+	3550 2650 3750 2650
+$Comp
+L Device:LED D?
+U 1 1 5DA65969
+P 4450 4300
+F 0 "D?" H 4443 4045 50  0000 C CNN
+F 1 "LED" H 4443 4136 50  0000 C CNN
+F 2 "" H 4450 4300 50  0001 C CNN
+F 3 "~" H 4450 4300 50  0001 C CNN
+	1    4450 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DA6635A
+P 4450 4550
+F 0 "D?" H 4443 4295 50  0000 C CNN
+F 1 "LED" H 4443 4386 50  0000 C CNN
+F 2 "" H 4450 4550 50  0001 C CNN
+F 3 "~" H 4450 4550 50  0001 C CNN
+	1    4450 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DA66EE5
+P 4450 4850
+F 0 "D?" H 4443 4595 50  0000 C CNN
+F 1 "LED" H 4443 4686 50  0000 C CNN
+F 2 "" H 4450 4850 50  0001 C CNN
+F 3 "~" H 4450 4850 50  0001 C CNN
+	1    4450 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DA67A4F
+P 4450 5100
+F 0 "D?" H 4443 4845 50  0000 C CNN
+F 1 "LED" H 4443 4936 50  0000 C CNN
+F 2 "" H 4450 5100 50  0001 C CNN
+F 3 "~" H 4450 5100 50  0001 C CNN
+	1    4450 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA88A70
+P 4600 4300
+F 0 "#PWR?" H 4600 4050 50  0001 C CNN
+F 1 "GND" V 4605 4172 50  0000 R CNN
+F 2 "" H 4600 4300 50  0001 C CNN
+F 3 "" H 4600 4300 50  0001 C CNN
+	1    4600 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA8910E
+P 4600 4550
+F 0 "#PWR?" H 4600 4300 50  0001 C CNN
+F 1 "GND" V 4605 4422 50  0000 R CNN
+F 2 "" H 4600 4550 50  0001 C CNN
+F 3 "" H 4600 4550 50  0001 C CNN
+	1    4600 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA897A0
+P 4600 4850
+F 0 "#PWR?" H 4600 4600 50  0001 C CNN
+F 1 "GND" V 4605 4722 50  0000 R CNN
+F 2 "" H 4600 4850 50  0001 C CNN
+F 3 "" H 4600 4850 50  0001 C CNN
+	1    4600 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA89FC6
+P 4600 5100
+F 0 "#PWR?" H 4600 4850 50  0001 C CNN
+F 1 "GND" V 4605 4972 50  0000 R CNN
+F 2 "" H 4600 5100 50  0001 C CNN
+F 3 "" H 4600 5100 50  0001 C CNN
+	1    4600 5100
+	0    -1   -1   0   
+$EndComp
+Text Label 3750 2750 0    50   ~ 0
+D_PIN_6
+Text Label 3750 2850 0    50   ~ 0
+D_PIN_5
+Text Label 3750 2950 0    50   ~ 0
+D_PIN_4
+Text Label 3750 3050 0    50   ~ 0
+D_PIN_3
+Text Label 3750 3150 0    50   ~ 0
+D_PIN_2
+Text Label 1800 4550 0    50   ~ 0
+D_PIN_1
+Text Label 1800 4650 0    50   ~ 0
+D_PIN_12
+Text Label 3800 4150 0    50   ~ 0
+D_PIN_7
+Text Label 3800 4250 0    50   ~ 0
+D_PIN_8
+Text Label 3650 4350 0    50   ~ 0
+D_PIN_9
+Text Label 3800 5200 0    50   ~ 0
+D_PIN_10
+Text Label 3800 5300 0    50   ~ 0
+D_PIN_11
+Wire Wire Line
+	3550 2750 3750 2750
+Wire Wire Line
+	3550 2850 3750 2850
+Wire Wire Line
+	3750 2950 3550 2950
+Wire Wire Line
+	3550 3050 3750 3050
+Wire Wire Line
+	3750 3150 3550 3150
+Wire Wire Line
+	3550 5150 3800 5150
+Wire Wire Line
+	3800 5150 3800 5200
+Wire Wire Line
+	3550 5250 3800 5250
+Wire Wire Line
+	3800 5250 3800 5300
+Wire Wire Line
+	3550 4250 3800 4250
+Wire Wire Line
+	3550 4150 3800 4150
+Text Label 9300 1400 0    50   ~ 0
+D_PIN_6
+Wire Wire Line
+	9300 1400 9800 1400
+Text Label 9300 1300 0    50   ~ 0
+D_PIN_5
+Wire Wire Line
+	9300 1300 9800 1300
+Text Label 9300 1200 0    50   ~ 0
+D_PIN_4
+Wire Wire Line
+	9300 1200 9800 1200
+Text Label 9300 1100 0    50   ~ 0
+D_PIN_3
+Wire Wire Line
+	9300 1100 9800 1100
+Text Label 9300 1000 0    50   ~ 0
+D_PIN_2
+Wire Wire Line
+	9300 1000 9800 1000
+Text Label 9300 900  0    50   ~ 0
+D_PIN_1
+Wire Wire Line
+	9300 900  9800 900 
+Text Label 10600 1400 0    50   ~ 0
+D_PIN_7
+Text Label 10600 1300 0    50   ~ 0
+D_PIN_8
+Text Label 10600 1200 0    50   ~ 0
+D_PIN_9
+Text Label 10600 1100 0    50   ~ 0
+D_PIN_10
+Text Label 10600 1000 0    50   ~ 0
+D_PIN_11
+Text Label 10600 900  0    50   ~ 0
+D_PIN_12
+Wire Wire Line
+	10300 1400 10600 1400
+Wire Wire Line
+	10600 1300 10300 1300
+Wire Wire Line
+	10300 1200 10600 1200
+Wire Wire Line
+	10600 1100 10300 1100
+Wire Wire Line
+	10300 1000 10600 1000
+Wire Wire Line
+	10600 900  10300 900 
+Connection ~ 10150 3550
+Wire Wire Line
+	10150 3550 10150 2850
+Connection ~ 10200 4300
+Wire Wire Line
+	10150 4300 10200 4300
+Wire Wire Line
+	10150 3550 10150 4300
+Connection ~ 10200 5000
+Wire Wire Line
+	10200 5000 10200 4300
+Connection ~ 10200 5850
+Wire Wire Line
+	10200 5850 10200 5000
+Wire Wire Line
+	10200 6400 10200 5850
+Connection ~ 9100 5850
+Wire Wire Line
+	9100 5850 9100 6400
+Connection ~ 9100 5000
+Wire Wire Line
+	9100 5000 9100 5850
+Wire Wire Line
+	9100 4300 9600 4300
+Connection ~ 9100 4300
+Wire Wire Line
+	9100 4300 9100 5000
+Connection ~ 9050 3550
+Wire Wire Line
+	9050 4300 9100 4300
+Wire Wire Line
+	9050 3550 9050 4300
+Wire Wire Line
+	9050 2850 9050 3550
+Connection ~ 6950 5850
+Wire Wire Line
+	6950 5850 6950 6450
+Connection ~ 8050 5850
+Wire Wire Line
+	8050 5850 8050 6400
+Connection ~ 8050 5000
+Wire Wire Line
+	8050 5000 8050 5850
+Wire Wire Line
+	8050 4300 8550 4300
+Connection ~ 8050 4300
+Wire Wire Line
+	8050 4300 8050 5000
+Connection ~ 8000 3550
+Wire Wire Line
+	8000 4300 8050 4300
+Wire Wire Line
+	8000 3550 8000 4300
+Wire Wire Line
+	8000 2850 8000 3550
+Connection ~ 6950 5000
+Wire Wire Line
+	6950 5000 6950 5850
+Wire Wire Line
+	6950 4300 7450 4300
+Connection ~ 6950 4300
+Wire Wire Line
+	6950 4300 6950 5000
+Connection ~ 6900 3550
+Wire Wire Line
+	6900 4300 6950 4300
+Wire Wire Line
+	6900 3550 6900 4300
+Wire Wire Line
+	6900 2850 6900 3550
+Text Label 10200 6400 0    50   ~ 0
+COL_3
+Text Label 9100 6400 0    50   ~ 0
+COL_2
+Text Label 8050 6400 0    50   ~ 0
+COL_1
+Text Label 6950 6450 0    50   ~ 0
+COL_0
+Connection ~ 9250 5250
+Wire Wire Line
+	9250 5250 10350 5250
+Connection ~ 8200 5250
+Wire Wire Line
+	8200 5250 9250 5250
+Wire Wire Line
+	7100 5250 7100 5550
+Connection ~ 7100 5250
+Wire Wire Line
+	7100 5250 8200 5250
+Wire Wire Line
+	7100 5200 7100 5250
+Wire Wire Line
+	6450 5200 7100 5200
+Connection ~ 9250 4400
+Wire Wire Line
+	9250 4400 10350 4400
+Connection ~ 8200 4400
+Wire Wire Line
+	8200 4400 9250 4400
+Connection ~ 7100 4400
+Wire Wire Line
+	7100 4400 8200 4400
+Wire Wire Line
+	6450 4400 7100 4400
+Connection ~ 9250 3700
+Wire Wire Line
+	9250 3700 10350 3700
+Connection ~ 8200 3700
+Wire Wire Line
+	8200 3700 9250 3700
+Connection ~ 7100 3700
+Wire Wire Line
+	7100 3700 8200 3700
+Wire Wire Line
+	6450 3700 7100 3700
+Connection ~ 9200 2950
+Wire Wire Line
+	9200 2950 10300 2950
+Connection ~ 8150 2950
+Wire Wire Line
+	8150 2950 9200 2950
+Connection ~ 7050 2950
+Wire Wire Line
+	7050 2950 8150 2950
+Wire Wire Line
+	6450 2950 7050 2950
+Connection ~ 9200 2250
+Wire Wire Line
+	9200 2250 10300 2250
+Connection ~ 8150 2250
+Wire Wire Line
+	8150 2250 9200 2250
+Wire Wire Line
+	8150 2550 8150 2250
+Wire Wire Line
+	7050 2250 7050 2550
+Connection ~ 7050 2250
+Wire Wire Line
+	7050 2250 8150 2250
+Wire Wire Line
+	7050 2200 7050 2250
+Wire Wire Line
+	6450 2200 7050 2200
+Text Label 6450 5200 0    50   ~ 0
+ROW_4
+Text Label 6450 4400 0    50   ~ 0
+ROW_3
+Text Label 6450 3700 0    50   ~ 0
+ROW_2
+Text Label 6450 2950 0    50   ~ 0
+ROW_1
+Text Label 6450 2200 0    50   ~ 0
+ROW_0
+Wire Wire Line
+	10700 5850 10200 5850
+Wire Wire Line
+	10350 5550 10350 5250
+Wire Wire Line
+	10650 5550 10350 5550
+Wire Wire Line
+	11050 5850 11000 5850
+Wire Wire Line
+	11050 5550 11050 5850
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D86138D
+P 10850 5550
+F 0 "SW?" H 10850 5835 50  0000 C CNN
+F 1 "SW_Push" H 10850 5744 50  0000 C CNN
+F 2 "" H 10850 5750 50  0001 C CNN
+F 3 "~" H 10850 5750 50  0001 C CNN
+	1    10850 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D?
+U 1 1 5D861387
+P 10850 5850
+F 0 "D?" H 10850 6066 50  0000 C CNN
+F 1 "1N5819" H 10850 5975 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10850 5675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 10850 5850 50  0001 C CNN
+	1    10850 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 5850 9100 5850
+Wire Wire Line
+	9250 5550 9250 5250
+Wire Wire Line
+	9550 5550 9250 5550
+Wire Wire Line
+	9950 5850 9900 5850
+Wire Wire Line
+	9950 5550 9950 5850
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D86137C
+P 9750 5550
+F 0 "SW?" H 9750 5835 50  0000 C CNN
+F 1 "SW_Push" H 9750 5744 50  0000 C CNN
+F 2 "" H 9750 5750 50  0001 C CNN
+F 3 "~" H 9750 5750 50  0001 C CNN
+	1    9750 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D?
+U 1 1 5D861376
+P 9750 5850
+F 0 "D?" H 9750 6066 50  0000 C CNN
+F 1 "1N5819" H 9750 5975 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 9750 5675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 9750 5850 50  0001 C CNN
+	1    9750 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 5850 8050 5850
+Wire Wire Line
+	8200 5550 8200 5250
+Wire Wire Line
+	8500 5550 8200 5550
+Wire Wire Line
+	8900 5850 8850 5850
+Wire Wire Line
+	8900 5550 8900 5850
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D86136B
+P 8700 5550
+F 0 "SW?" H 8700 5835 50  0000 C CNN
+F 1 "SW_Push" H 8700 5744 50  0000 C CNN
+F 2 "" H 8700 5750 50  0001 C CNN
+F 3 "~" H 8700 5750 50  0001 C CNN
+	1    8700 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D?
+U 1 1 5D861365
+P 8700 5850
+F 0 "D?" H 8700 6066 50  0000 C CNN
+F 1 "1N5819" H 8700 5975 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8700 5675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 8700 5850 50  0001 C CNN
+	1    8700 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 5850 6950 5850
+Wire Wire Line
+	7400 5550 7100 5550
+Wire Wire Line
+	7800 5850 7750 5850
+Wire Wire Line
+	7800 5550 7800 5850
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D86135A
+P 7600 5550
+F 0 "SW?" H 7600 5835 50  0000 C CNN
+F 1 "SW_Push" H 7600 5744 50  0000 C CNN
+F 2 "" H 7600 5750 50  0001 C CNN
+F 3 "~" H 7600 5750 50  0001 C CNN
+	1    7600 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D?
+U 1 1 5D861354
+P 7600 5850
+F 0 "D?" H 7600 6066 50  0000 C CNN
+F 1 "1N5819" H 7600 5975 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7600 5675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 7600 5850 50  0001 C CNN
+	1    7600 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 5000 6950 5000
+Wire Wire Line
+	10700 5000 10200 5000
+Wire Wire Line
+	10350 4700 10350 4400
+Wire Wire Line
+	10650 4700 10350 4700
+Wire Wire Line
+	11050 5000 11000 5000
+Wire Wire Line
+	11050 4700 11050 5000
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D7F0F2F
+P 10850 4700
+F 0 "SW?" H 10850 4985 50  0000 C CNN
+F 1 "SW_Push" H 10850 4894 50  0000 C CNN
+F 2 "" H 10850 4900 50  0001 C CNN
+F 3 "~" H 10850 4900 50  0001 C CNN
+	1    10850 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D?
+U 1 1 5D7F0F29
+P 10850 5000
+F 0 "D?" H 10850 5216 50  0000 C CNN
+F 1 "1N5819" H 10850 5125 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10850 4825 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 10850 5000 50  0001 C CNN
+	1    10850 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 4300 10200 4300
+Wire Wire Line
+	10350 4000 10350 3700
+Wire Wire Line
+	10650 4000 10350 4000
+Wire Wire Line
+	11050 4300 11000 4300
+Wire Wire Line
+	11050 4000 11050 4300
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D7F0F1E
+P 10850 4000
+F 0 "SW?" H 10850 4285 50  0000 C CNN
+F 1 "SW_Push" H 10850 4194 50  0000 C CNN
+F 2 "" H 10850 4200 50  0001 C CNN
+F 3 "~" H 10850 4200 50  0001 C CNN
+	1    10850 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D?
+U 1 1 5D7F0F18
+P 10850 4300
+F 0 "D?" H 10850 4516 50  0000 C CNN
+F 1 "1N5819" H 10850 4425 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10850 4125 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 10850 4300 50  0001 C CNN
+	1    10850 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 3550 10150 3550
+Wire Wire Line
+	10300 3250 10300 2950
+Wire Wire Line
+	10600 3250 10300 3250
+Wire Wire Line
+	11000 3550 10950 3550
+Wire Wire Line
+	11000 3250 11000 3550
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D7F0F0D
+P 10800 3250
+F 0 "SW?" H 10800 3535 50  0000 C CNN
+F 1 "SW_Push" H 10800 3444 50  0000 C CNN
+F 2 "" H 10800 3450 50  0001 C CNN
+F 3 "~" H 10800 3450 50  0001 C CNN
+	1    10800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D?
+U 1 1 5D7F0F07
+P 10800 3550
+F 0 "D?" H 10800 3766 50  0000 C CNN
+F 1 "1N5819" H 10800 3675 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10800 3375 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 10800 3550 50  0001 C CNN
+	1    10800 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 2850 10150 2850
+Wire Wire Line
+	10300 2550 10300 2250
+Wire Wire Line
+	10600 2550 10300 2550
+Wire Wire Line
+	11000 2850 10950 2850
+Wire Wire Line
+	11000 2550 11000 2850
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D7F0EFC
+P 10800 2550
+F 0 "SW?" H 10800 2835 50  0000 C CNN
+F 1 "SW_Push" H 10800 2744 50  0000 C CNN
+F 2 "" H 10800 2750 50  0001 C CNN
+F 3 "~" H 10800 2750 50  0001 C CNN
+	1    10800 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D?
+U 1 1 5D7F0EF6
+P 10800 2850
+F 0 "D?" H 10800 3066 50  0000 C CNN
+F 1 "1N5819" H 10800 2975 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10800 2675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 10800 2850 50  0001 C CNN
+	1    10800 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 5000 9100 5000
+Wire Wire Line
+	9250 4700 9250 4400
+Wire Wire Line
+	9550 4700 9250 4700
+Wire Wire Line
+	9950 5000 9900 5000
+Wire Wire Line
+	9950 4700 9950 5000
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D7F0EEB
+P 9750 4700
+F 0 "SW?" H 9750 4985 50  0000 C CNN
+F 1 "SW_Push" H 9750 4894 50  0000 C CNN
+F 2 "" H 9750 4900 50  0001 C CNN
+F 3 "~" H 9750 4900 50  0001 C CNN
+	1    9750 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D?
+U 1 1 5D7F0EE5
+P 9750 5000
+F 0 "D?" H 9750 5216 50  0000 C CNN
+F 1 "1N5819" H 9750 5125 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 9750 4825 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 9750 5000 50  0001 C CNN
+	1    9750 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 4000 9250 3700
+Wire Wire Line
+	9550 4000 9250 4000
+Wire Wire Line
+	9950 4300 9900 4300
+Wire Wire Line
+	9950 4000 9950 4300
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D7F0EDA
+P 9750 4000
+F 0 "SW?" H 9750 4285 50  0000 C CNN
+F 1 "SW_Push" H 9750 4194 50  0000 C CNN
+F 2 "" H 9750 4200 50  0001 C CNN
+F 3 "~" H 9750 4200 50  0001 C CNN
+	1    9750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D?
+U 1 1 5D7F0ED4
+P 9750 4300
+F 0 "D?" H 9750 4516 50  0000 C CNN
+F 1 "1N5819" H 9750 4425 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 9750 4125 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 9750 4300 50  0001 C CNN
+	1    9750 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 3550 9050 3550
+Wire Wire Line
+	9200 3250 9200 2950
+Wire Wire Line
+	9500 3250 9200 3250
+Wire Wire Line
+	9900 3550 9850 3550
+Wire Wire Line
+	9900 3250 9900 3550
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D7F0EC9
+P 9700 3250
+F 0 "SW?" H 9700 3535 50  0000 C CNN
+F 1 "SW_Push" H 9700 3444 50  0000 C CNN
+F 2 "" H 9700 3450 50  0001 C CNN
+F 3 "~" H 9700 3450 50  0001 C CNN
+	1    9700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D?
+U 1 1 5D7F0EC3
+P 9700 3550
+F 0 "D?" H 9700 3766 50  0000 C CNN
+F 1 "1N5819" H 9700 3675 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 9700 3375 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 9700 3550 50  0001 C CNN
+	1    9700 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 2850 9050 2850
+Wire Wire Line
+	9200 2550 9200 2250
+Wire Wire Line
+	9500 2550 9200 2550
+Wire Wire Line
+	9900 2850 9850 2850
+Wire Wire Line
+	9900 2550 9900 2850
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D7F0EB8
+P 9700 2550
+F 0 "SW?" H 9700 2835 50  0000 C CNN
+F 1 "SW_Push" H 9700 2744 50  0000 C CNN
+F 2 "" H 9700 2750 50  0001 C CNN
+F 3 "~" H 9700 2750 50  0001 C CNN
+	1    9700 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D?
+U 1 1 5D7F0EB2
+P 9700 2850
+F 0 "D?" H 9700 3066 50  0000 C CNN
+F 1 "1N5819" H 9700 2975 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 9700 2675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 9700 2850 50  0001 C CNN
+	1    9700 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 5000 8050 5000
+Wire Wire Line
+	8200 4700 8200 4400
+Wire Wire Line
+	8500 4700 8200 4700
+Wire Wire Line
+	8900 5000 8850 5000
+Wire Wire Line
+	8900 4700 8900 5000
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D7E748B
+P 8700 4700
+F 0 "SW?" H 8700 4985 50  0000 C CNN
+F 1 "SW_Push" H 8700 4894 50  0000 C CNN
+F 2 "" H 8700 4900 50  0001 C CNN
+F 3 "~" H 8700 4900 50  0001 C CNN
+	1    8700 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D?
+U 1 1 5D7E7485
+P 8700 5000
+F 0 "D?" H 8700 5216 50  0000 C CNN
+F 1 "1N5819" H 8700 5125 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8700 4825 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 8700 5000 50  0001 C CNN
+	1    8700 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 4000 8200 3700
+Wire Wire Line
+	8500 4000 8200 4000
+Wire Wire Line
+	8900 4300 8850 4300
+Wire Wire Line
+	8900 4000 8900 4300
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D7E747A
+P 8700 4000
+F 0 "SW?" H 8700 4285 50  0000 C CNN
+F 1 "SW_Push" H 8700 4194 50  0000 C CNN
+F 2 "" H 8700 4200 50  0001 C CNN
+F 3 "~" H 8700 4200 50  0001 C CNN
+	1    8700 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D?
+U 1 1 5D7E7474
+P 8700 4300
+F 0 "D?" H 8700 4516 50  0000 C CNN
+F 1 "1N5819" H 8700 4425 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8700 4125 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 8700 4300 50  0001 C CNN
+	1    8700 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 3550 8000 3550
+Wire Wire Line
+	8150 3250 8150 2950
+Wire Wire Line
+	8450 3250 8150 3250
+Wire Wire Line
+	8850 3550 8800 3550
+Wire Wire Line
+	8850 3250 8850 3550
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D7E7469
+P 8650 3250
+F 0 "SW?" H 8650 3535 50  0000 C CNN
+F 1 "SW_Push" H 8650 3444 50  0000 C CNN
+F 2 "" H 8650 3450 50  0001 C CNN
+F 3 "~" H 8650 3450 50  0001 C CNN
+	1    8650 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D?
+U 1 1 5D7E7463
+P 8650 3550
+F 0 "D?" H 8650 3766 50  0000 C CNN
+F 1 "1N5819" H 8650 3675 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8650 3375 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 8650 3550 50  0001 C CNN
+	1    8650 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 2850 8000 2850
+Wire Wire Line
+	8450 2550 8150 2550
+Wire Wire Line
+	8850 2850 8800 2850
+Wire Wire Line
+	8850 2550 8850 2850
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D7E7458
+P 8650 2550
+F 0 "SW?" H 8650 2835 50  0000 C CNN
+F 1 "SW_Push" H 8650 2744 50  0000 C CNN
+F 2 "" H 8650 2750 50  0001 C CNN
+F 3 "~" H 8650 2750 50  0001 C CNN
+	1    8650 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D?
+U 1 1 5D7E7452
+P 8650 2850
+F 0 "D?" H 8650 3066 50  0000 C CNN
+F 1 "1N5819" H 8650 2975 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8650 2675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 8650 2850 50  0001 C CNN
+	1    8650 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 4700 7100 4400
+Wire Wire Line
+	7400 4700 7100 4700
+Wire Wire Line
+	7800 5000 7750 5000
+Wire Wire Line
+	7800 4700 7800 5000
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D7E15F1
+P 7600 4700
+F 0 "SW?" H 7600 4985 50  0000 C CNN
+F 1 "SW_Push" H 7600 4894 50  0000 C CNN
+F 2 "" H 7600 4900 50  0001 C CNN
+F 3 "~" H 7600 4900 50  0001 C CNN
+	1    7600 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D?
+U 1 1 5D7E15EB
+P 7600 5000
+F 0 "D?" H 7600 5216 50  0000 C CNN
+F 1 "1N5819" H 7600 5125 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7600 4825 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 7600 5000 50  0001 C CNN
+	1    7600 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 4000 7100 3700
+Wire Wire Line
+	7400 4000 7100 4000
+Wire Wire Line
+	7800 4300 7750 4300
+Wire Wire Line
+	7800 4000 7800 4300
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D7E15E0
+P 7600 4000
+F 0 "SW?" H 7600 4285 50  0000 C CNN
+F 1 "SW_Push" H 7600 4194 50  0000 C CNN
+F 2 "" H 7600 4200 50  0001 C CNN
+F 3 "~" H 7600 4200 50  0001 C CNN
+	1    7600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D?
+U 1 1 5D7E15DA
+P 7600 4300
+F 0 "D?" H 7600 4516 50  0000 C CNN
+F 1 "1N5819" H 7600 4425 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7600 4125 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 7600 4300 50  0001 C CNN
+	1    7600 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3550 6900 3550
+Wire Wire Line
+	7050 3250 7050 2950
+Wire Wire Line
+	7350 3250 7050 3250
+Wire Wire Line
+	7750 3550 7700 3550
+Wire Wire Line
+	7750 3250 7750 3550
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D7D9613
+P 7550 3250
+F 0 "SW?" H 7550 3535 50  0000 C CNN
+F 1 "SW_Push" H 7550 3444 50  0000 C CNN
+F 2 "" H 7550 3450 50  0001 C CNN
+F 3 "~" H 7550 3450 50  0001 C CNN
+	1    7550 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D?
+U 1 1 5D7D960D
+P 7550 3550
+F 0 "D?" H 7550 3766 50  0000 C CNN
+F 1 "1N5819" H 7550 3675 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7550 3375 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 7550 3550 50  0001 C CNN
+	1    7550 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 2850 6900 2850
+Wire Wire Line
+	7350 2550 7050 2550
+Wire Wire Line
+	7750 2850 7700 2850
+Wire Wire Line
+	7750 2550 7750 2850
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D7CF9AA
+P 7550 2550
+F 0 "SW?" H 7550 2835 50  0000 C CNN
+F 1 "SW_Push" H 7550 2744 50  0000 C CNN
+F 2 "" H 7550 2750 50  0001 C CNN
+F 3 "~" H 7550 2750 50  0001 C CNN
+	1    7550 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D?
+U 1 1 5D7C594C
+P 7550 2850
+F 0 "D?" H 7550 3066 50  0000 C CNN
+F 1 "1N5819" H 7550 2975 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7550 2675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 7550 2850 50  0001 C CNN
+	1    7550 2850
+	1    0    0    -1  
+$EndComp
+Text Label 3800 3650 0    50   ~ 0
+FS_DP
+Text Label 3800 3550 0    50   ~ 0
+FS_DM
+Wire Wire Line
+	3550 3550 3800 3550
+Wire Wire Line
+	3800 3650 3550 3650
+Text Label 3800 3750 0    50   ~ 0
+SWDIO
+Text Label 3800 3850 0    50   ~ 0
+SWCLK
+Text Label 3650 4450 0    50   ~ 0
+TRACESWO
+Wire Wire Line
+	3550 3750 3800 3750
+Wire Wire Line
+	3800 3850 3550 3850
+Wire Wire Line
+	3550 4350 3650 4350
+Wire Wire Line
+	3650 4450 3550 4450
+Wire Wire Line
+	3550 4550 4200 4550
+Wire Wire Line
+	4200 4550 4200 4300
+Wire Wire Line
+	4200 4300 4300 4300
+Wire Wire Line
+	3550 4650 4300 4650
+Wire Wire Line
+	4300 4650 4300 4550
+Wire Wire Line
+	4200 4850 4200 5100
+Wire Wire Line
+	4200 5100 4300 5100
+Wire Wire Line
+	3550 4850 4200 4850
+Wire Wire Line
+	3550 4750 4300 4750
+Wire Wire Line
+	4300 4750 4300 4850
+$Comp
+L Connector_Generic:Conn_02x07_Counter_Clockwise J?
+U 1 1 5D9F22FF
+P 10000 1200
+F 0 "J?" H 10050 1717 50  0000 C CNN
+F 1 "Conn_02x07_Counter_Clockwise" H 10050 1626 50  0000 C CNN
+F 2 "" H 10000 1200 50  0001 C CNN
+F 3 "~" H 10000 1200 50  0001 C CNN
+	1    10000 1200
+	1    0    0    -1  
+$EndComp
+Text Label 9300 1500 0    50   ~ 0
+VCC_3_3
+Wire Wire Line
+	9300 1500 9800 1500
+$Comp
+L power:GND #PWR?
+U 1 1 5DA6FBDF
+P 10600 1500
+F 0 "#PWR?" H 10600 1250 50  0001 C CNN
+F 1 "GND" V 10605 1372 50  0000 R CNN
+F 2 "" H 10600 1500 50  0001 C CNN
+F 3 "" H 10600 1500 50  0001 C CNN
+	1    10600 1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10300 1500 10600 1500
+$Comp
+L power:GND #PWR?
+U 1 1 5DA8C44D
+P 7300 1050
+F 0 "#PWR?" H 7300 800 50  0001 C CNN
+F 1 "GND" V 7305 922 50  0000 R CNN
+F 2 "" H 7300 1050 50  0001 C CNN
+F 3 "" H 7300 1050 50  0001 C CNN
+	1    7300 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DAA4EE8
+P 1850 2650
+F 0 "#PWR?" H 1850 2400 50  0001 C CNN
+F 1 "GND" V 1855 2522 50  0000 R CNN
+F 2 "" H 1850 2650 50  0001 C CNN
+F 3 "" H 1850 2650 50  0001 C CNN
+	1    1850 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DB3E32C
+P 2000 2650
+F 0 "R?" V 1793 2650 50  0000 C CNN
+F 1 "10K R" V 1884 2650 50  0000 C CNN
+F 2 "" V 1930 2650 50  0001 C CNN
+F 3 "~" H 2000 2650 50  0001 C CNN
+	1    2000 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D9440BE
+P 1050 1950
+F 0 "SW?" H 1050 2235 50  0000 C CNN
+F 1 "SW_Push" H 1050 2144 50  0000 C CNN
+F 2 "" H 1050 2150 50  0001 C CNN
+F 3 "~" H 1050 2150 50  0001 C CNN
+	1    1050 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D92DFB0
+P 1050 2150
+F 0 "#PWR?" H 1050 1900 50  0001 C CNN
+F 1 "GND" H 1055 1977 50  0000 C CNN
+F 2 "" H 1050 2150 50  0001 C CNN
+F 3 "" H 1050 2150 50  0001 C CNN
+	1    1050 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D9351E8
+P 1250 1900
+F 0 "C?" H 1365 1946 50  0000 L CNN
+F 1 "0.1 uF" H 1365 1855 50  0000 L CNN
+F 2 "" H 1288 1750 50  0001 C CNN
+F 3 "~" H 1250 1900 50  0001 C CNN
+	1    1250 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D9A849C
+P 1250 2050
+F 0 "#PWR?" H 1250 1800 50  0001 C CNN
+F 1 "GND" H 1255 1877 50  0000 C CNN
+F 2 "" H 1250 2050 50  0001 C CNN
+F 3 "" H 1250 2050 50  0001 C CNN
+	1    1250 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2400 1400 2100
+Wire Wire Line
+	1400 2100 1500 2100
+Wire Wire Line
+	1500 2100 1500 1750
+Wire Wire Line
+	1500 1750 1250 1750
+Connection ~ 1250 1750
+Wire Wire Line
+	1250 1750 1050 1750
+$Comp
+L power:GND #PWR?
+U 1 1 5DBC2F23
+P 2800 6250
+F 0 "#PWR?" H 2800 6000 50  0001 C CNN
+F 1 "GND" H 2805 6077 50  0000 C CNN
+F 2 "" H 2800 6250 50  0001 C CNN
+F 3 "" H 2800 6250 50  0001 C CNN
+	1    2800 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 5850 2750 5850
+Connection ~ 2750 5850
+Wire Wire Line
+	2750 5850 2850 5850
+Connection ~ 2850 5850
+Wire Wire Line
+	2850 5850 2950 5850
+Connection ~ 2950 5850
+Wire Wire Line
+	2950 5850 3050 5850
+Text Label 7300 850  0    50   ~ 0
+VCC_3_3
+Text Label 7300 1150 0    50   ~ 0
+SWDIO
+Text Label 7300 950  0    50   ~ 0
+SWCLK
+$Comp
+L Connector_Generic:Conn_01x06 J?
+U 1 1 5DCF1E1B
+P 7900 1050
+F 0 "J?" H 7980 1042 50  0000 L CNN
+F 1 "Conn_01x06" H 7980 951 50  0000 L CNN
+F 2 "" H 7900 1050 50  0001 C CNN
+F 3 "~" H 7900 1050 50  0001 C CNN
+	1    7900 1050
+	1    0    0    -1  
+$EndComp
+Text Label 7300 1250 0    50   ~ 0
+NRST
+Text Label 7300 1350 0    50   ~ 0
+TRACESWO
+Wire Wire Line
+	7300 1350 7700 1350
+Wire Wire Line
+	7700 1250 7300 1250
+Wire Wire Line
+	7300 1150 7700 1150
+Wire Wire Line
+	7700 1050 7300 1050
+Wire Wire Line
+	7300 950  7700 950 
+Wire Wire Line
+	7700 850  7300 850 
+Wire Wire Line
+	1400 2400 2150 2400
+Wire Wire Line
+	2150 2400 2150 2450
+$Comp
+L dk_TVS-Diodes:USBLC6-2SC6 D?
+U 1 1 5DC68218
+P 4700 6250
+F 0 "D?" H 4700 6937 60  0000 C CNN
+F 1 "USBLC6-2SC6" H 4700 6831 60  0000 C CNN
+F 2 "digikey-footprints:SOT23-6L" H 4900 6450 60  0001 L CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/06/1d/48/9c/6c/20/4a/b2/CD00050750.pdf/files/CD00050750.pdf/jcr:content/translations/en.CD00050750.pdf" H 4900 6550 60  0001 L CNN
+F 4 "497-5235-1-ND" H 4900 6650 60  0001 L CNN "Digi-Key_PN"
+F 5 "USBLC6-2SC6" H 4900 6750 60  0001 L CNN "MPN"
+F 6 "Circuit Protection" H 4900 6850 60  0001 L CNN "Category"
+F 7 "TVS - Diodes" H 4900 6950 60  0001 L CNN "Family"
+F 8 "http://www.st.com/content/ccc/resource/technical/document/datasheet/06/1d/48/9c/6c/20/4a/b2/CD00050750.pdf/files/CD00050750.pdf/jcr:content/translations/en.CD00050750.pdf" H 4900 7050 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/stmicroelectronics/USBLC6-2SC6/497-5235-1-ND/1121688" H 4900 7150 60  0001 L CNN "DK_Detail_Page"
+F 10 "TVS DIODE 5.25V 17V SOT23-6" H 4900 7250 60  0001 L CNN "Description"
+F 11 "STMicroelectronics" H 4900 7350 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4900 7450 60  0001 L CNN "Status"
+	1    4700 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 6350 5950 6350
+Wire Wire Line
+	6250 6250 5950 6250
+Wire Wire Line
+	5950 6250 5950 5950
+Wire Wire Line
+	5950 5950 5200 5950
+$Comp
+L Device:R R?
+U 1 1 5DD4DA8A
+P 6250 5800
+F 0 "R?" H 6320 5846 50  0000 L CNN
+F 1 "R 100k" H 6320 5755 50  0000 L CNN
+F 2 "" V 6180 5800 50  0001 C CNN
+F 3 "~" H 6250 5800 50  0001 C CNN
+	1    6250 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 6150 6250 5950
+Wire Wire Line
+	6550 5950 6550 5650
+Text Label 3750 5950 0    50   ~ 0
+FS_DP
+Text Label 3750 6550 0    50   ~ 0
+FS_DM
+Wire Wire Line
+	4200 5950 3750 5950
+Wire Wire Line
+	4200 6550 3750 6550
+$Comp
+L power:GND #PWR?
+U 1 1 5DEBC6AD
+P 4200 6250
+F 0 "#PWR?" H 4200 6000 50  0001 C CNN
+F 1 "GND" V 4205 6122 50  0000 R CNN
+F 2 "" H 4200 6250 50  0001 C CNN
+F 3 "" H 4200 6250 50  0001 C CNN
+	1    4200 6250
+	0    1    1    0   
+$EndComp
+$Comp
+L dk_PMIC-Voltage-Regulators-Linear:LD1117S33CTR U?
+U 1 1 5DFA80A9
+P 5650 7300
+F 0 "U?" H 5700 7481 60  0000 C CNN
+F 1 "LD1117S33CTR" H 5700 7587 60  0000 C CNN
+F 2 "digikey-footprints:SOT-223" H 5850 7500 60  0001 L CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/99/3b/7d/91/91/51/4b/be/CD00000544.pdf/files/CD00000544.pdf/jcr:content/translations/en.CD00000544.pdf" H 5850 7600 60  0001 L CNN
+F 4 "497-1241-1-ND" H 5850 7700 60  0001 L CNN "Digi-Key_PN"
+F 5 "LD1117S33CTR" H 5850 7800 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 5850 7900 60  0001 L CNN "Category"
+F 7 "PMIC - Voltage Regulators - Linear" H 5850 8000 60  0001 L CNN "Family"
+F 8 "http://www.st.com/content/ccc/resource/technical/document/datasheet/99/3b/7d/91/91/51/4b/be/CD00000544.pdf/files/CD00000544.pdf/jcr:content/translations/en.CD00000544.pdf" H 5850 8100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/stmicroelectronics/LD1117S33CTR/497-1241-1-ND/586241" H 5850 8200 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC REG LINEAR 3.3V 800MA SOT223" H 5850 8300 60  0001 L CNN "Description"
+F 11 "STMicroelectronics" H 5850 8400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5850 8500 60  0001 L CNN "Status"
+	1    5650 7300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:USB_B_Mini J?
+U 1 1 5DD0B44D
+P 6550 6350
+F 0 "J?" H 6607 6817 50  0000 C CNN
+F 1 "USB_B_Mini" H 6607 6726 50  0000 C CNN
+F 2 "" H 6700 6300 50  0001 C CNN
+F 3 "~" H 6700 6300 50  0001 C CNN
+	1    6550 6350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 6550 5200 6550
+Wire Wire Line
+	5950 6350 5950 6550
+Wire Wire Line
+	6250 6550 6250 7300
+$Comp
+L power:GND #PWR?
+U 1 1 5E000AC4
+P 5650 7000
+F 0 "#PWR?" H 5650 6750 50  0001 C CNN
+F 1 "GND" H 5655 6827 50  0000 C CNN
+F 2 "" H 5650 7000 50  0001 C CNN
+F 3 "" H 5650 7000 50  0001 C CNN
+	1    5650 7000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6250 7300 5950 7300
+Wire Wire Line
+	5200 6250 5250 6250
+Wire Wire Line
+	5250 6250 5250 7200
+Text Label 2200 6700 0    50   ~ 0
+VCC_3_3
+Connection ~ 5250 7200
+Wire Wire Line
+	6650 5950 6650 5650
+Wire Wire Line
+	3050 6250 2800 6250
+Wire Wire Line
+	3050 5850 3050 6250
+Wire Wire Line
+	6650 5650 6550 5650
+Connection ~ 6550 5650
+Wire Wire Line
+	6550 5650 6550 5550
+Wire Wire Line
+	6250 5650 6550 5650
+$Comp
+L power:GND #PWR?
+U 1 1 5DD7B997
+P 6550 5550
+F 0 "#PWR?" H 6550 5300 50  0001 C CNN
+F 1 "GND" H 6555 5377 50  0000 C CNN
+F 2 "" H 6550 5550 50  0001 C CNN
+F 3 "" H 6550 5550 50  0001 C CNN
+	1    6550 5550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3350 7150 2950 7150
+Connection ~ 3350 7150
+Wire Wire Line
+	3500 7150 3350 7150
+Wire Wire Line
+	3500 7300 3500 7150
+Connection ~ 3350 7650
+$Comp
+L power:GND #PWR?
+U 1 1 5D9F8852
+P 3350 7650
+F 0 "#PWR?" H 3350 7400 50  0001 C CNN
+F 1 "GND" V 3355 7522 50  0000 R CNN
+F 2 "" H 3350 7650 50  0001 C CNN
+F 3 "" H 3350 7650 50  0001 C CNN
+	1    3350 7650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2950 7650 3350 7650
+$Comp
+L pspice:CAP C?
+U 1 1 5D9E1751
+P 3350 7400
+F 0 "C?" H 3528 7446 50  0000 L CNN
+F 1 "CAP" H 3528 7355 50  0000 L CNN
+F 2 "" H 3350 7400 50  0001 C CNN
+F 3 "~" H 3350 7400 50  0001 C CNN
+	1    3350 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 7300 5250 7300
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 5DA91424
+P 2600 6850
+F 0 "FB?" H 2737 6896 50  0000 L CNN
+F 1 "Ferrite_Bead 600 " H 2737 6805 50  0000 L CNN
+F 2 "" V 2530 6850 50  0001 C CNN
+F 3 "~" H 2600 6850 50  0001 C CNN
+	1    2600 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 7150 2600 7000
+Wire Wire Line
+	3650 7200 3650 6700
+Wire Wire Line
+	3650 7200 5250 7200
+Wire Wire Line
+	2200 6700 2600 6700
+Connection ~ 2600 6700
+Wire Wire Line
+	2600 6700 3650 6700
+Connection ~ 2950 7150
+$Comp
+L pspice:CAP C?
+U 1 1 5D9E234F
+P 2950 7400
+F 0 "C?" H 3128 7446 50  0000 L CNN
+F 1 "CAP" H 3128 7355 50  0000 L CNN
+F 2 "" H 2950 7400 50  0001 C CNN
+F 3 "~" H 2950 7400 50  0001 C CNN
+	1    2950 7400
+	1    0    0    -1  
+$EndComp
+Text Label 2150 7150 0    50   ~ 0
+VCC_3_3A
+Wire Wire Line
+	2600 7150 2950 7150
+Wire Wire Line
+	2150 7150 2600 7150
+Connection ~ 2600 7150
+$Comp
+L Device:C C?
+U 1 1 5DB6D5E4
+P 3300 1500
+F 0 "C?" H 3415 1546 50  0000 L CNN
+F 1 "0.1 uF" H 3415 1455 50  0000 L CNN
+F 2 "" H 3338 1350 50  0001 C CNN
+F 3 "~" H 3300 1500 50  0001 C CNN
+	1    3300 1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3150 1500 3150 2250
+Wire Wire Line
+	3150 900  3150 1500
+Connection ~ 3150 1500
+Text Label 3150 900  1    50   ~ 0
+VCC_3_3
+$Comp
+L power:GND #PWR?
+U 1 1 5DBCC68A
+P 3450 1500
+F 0 "#PWR?" H 3450 1250 50  0001 C CNN
+F 1 "GND" V 3455 1372 50  0000 R CNN
+F 2 "" H 3450 1500 50  0001 C CNN
+F 3 "" H 3450 1500 50  0001 C CNN
+	1    3450 1500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3050 5850
+Wire Wire Line
+	2150 4650 1800 4650
+Wire Wire Line
+	1800 4550 2150 4550
+Wire Wire Line
+	2150 4450 1800 4450
+Wire Wire Line
+	1800 4350 2150 4350
+Wire Wire Line
+	2150 4250 1800 4250
+Wire Wire Line
+	1800 4150 2150 4150
+Wire Wire Line
+	2150 3750 1800 3750
+Wire Wire Line
+	1800 3650 2150 3650
+Text Label 3050 2250 1    50   ~ 0
+VCC_3_3A
+Wire Wire Line
+	2650 900  2750 900 
+Wire Wire Line
+	2650 900  2650 2000
+Wire Wire Line
+	2750 1700 2750 2250
+Connection ~ 2750 1700
+Wire Wire Line
+	2750 900  2850 900 
+Connection ~ 2750 900 
+Wire Wire Line
+	2750 900  2750 1700
+Connection ~ 2850 1500
+Wire Wire Line
+	2850 900  2850 1500
+Wire Wire Line
+	2850 1500 2850 2250
+$Comp
+L power:GND #PWR?
+U 1 1 5D93887B
+P 2550 1500
+F 0 "#PWR?" H 2550 1250 50  0001 C CNN
+F 1 "GND" V 2555 1372 50  0000 R CNN
+F 2 "" H 2550 1500 50  0001 C CNN
+F 3 "" H 2550 1500 50  0001 C CNN
+	1    2550 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D938875
+P 2700 1500
+F 0 "C?" H 2815 1546 50  0000 L CNN
+F 1 "0.1 uF" H 2815 1455 50  0000 L CNN
+F 2 "" H 2738 1350 50  0001 C CNN
+F 3 "~" H 2700 1500 50  0001 C CNN
+	1    2700 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D80F05B
+P 2450 1700
+F 0 "#PWR?" H 2450 1450 50  0001 C CNN
+F 1 "GND" V 2455 1572 50  0000 R CNN
+F 2 "" H 2450 1700 50  0001 C CNN
+F 3 "" H 2450 1700 50  0001 C CNN
+	1    2450 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D80F055
+P 2600 1700
+F 0 "C?" H 2715 1746 50  0000 L CNN
+F 1 "0.1 uF" H 2715 1655 50  0000 L CNN
+F 2 "" H 2638 1550 50  0001 C CNN
+F 3 "~" H 2600 1700 50  0001 C CNN
+	1    2600 1700
+	0    -1   -1   0   
+$EndComp
+Text Label 2700 900  1    50   ~ 0
+VCC_3_3
+Wire Wire Line
+	2650 2000 2650 2250
+Connection ~ 2650 2000
+$Comp
+L power:GND #PWR?
+U 1 1 5DBE8301
+P 2350 2000
+F 0 "#PWR?" H 2350 1750 50  0001 C CNN
+F 1 "GND" V 2355 1872 50  0000 R CNN
+F 2 "" H 2350 2000 50  0001 C CNN
+F 3 "" H 2350 2000 50  0001 C CNN
+	1    2350 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DBD6C11
+P 2500 2000
+F 0 "C?" H 2615 2046 50  0000 L CNN
+F 1 "0.1 uF" H 2615 1955 50  0000 L CNN
+F 2 "" H 2538 1850 50  0001 C CNN
+F 3 "~" H 2500 2000 50  0001 C CNN
+	1    2500 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MCU_ST_STM32L4:STM32L476RCTx U?
+U 1 1 5D7BC378
+P 2850 4050
+F 0 "U?" H 2850 2161 50  0000 C CNN
+F 1 "STM32L476RCTx" H 2850 2070 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 2250 2350 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00108832.pdf" H 2850 4050 50  0001 C CNN
+	1    2850 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 1300
+Wire Wire Line
+	2950 700  2950 1300
+$Comp
+L Device:C C?
+U 1 1 5DC0F394
+P 2800 1300
+F 0 "C?" H 2915 1346 50  0000 L CNN
+F 1 "0.1 uF" H 2915 1255 50  0000 L CNN
+F 2 "" H 2838 1150 50  0001 C CNN
+F 3 "~" H 2800 1300 50  0001 C CNN
+	1    2800 1300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2950 1300 2950 2250
+$EndSCHEMATC
