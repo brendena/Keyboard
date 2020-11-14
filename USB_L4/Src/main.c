@@ -17,14 +17,14 @@
   ******************************************************************************
   */
 /* USER CODE END Header */
-
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "usb_device.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "code/GetPressedKeys.h"
+#include "usbd_hid.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -59,7 +59,8 @@ static void MX_USART3_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+uint8_t buffer[8];
+extern USBD_HandleTypeDef hUsbDeviceFS;
 /* USER CODE END 0 */
 
 /**
@@ -71,7 +72,6 @@ int main(void)
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
-  
 
   /* MCU Configuration--------------------------------------------------------*/
 
@@ -94,6 +94,19 @@ int main(void)
   MX_USB_DEVICE_Init();
   MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
+  /*
+  while(1)
+  {
+	  HAL_GPIO_WritePin(ERROR_LED_GPIO_Port, ERROR_LED_Pin,   GPIO_PIN_SET);
+	  HAL_Delay(1000);
+	  HAL_GPIO_WritePin(ERROR_LED_GPIO_Port, ERROR_LED_Pin,   GPIO_PIN_RESET);
+	  HAL_Delay(1000);
+  }
+  */
+  setupUSBConversionTable();
+  KeysPressed * pressedKeys = getKeyPadPressedKeys();
+  memset(buffer,0,8);
+  buffer[0] = 1;
 
   /* USER CODE END 2 */
 
@@ -104,6 +117,20 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
+	  calculatePressedKeys();
+	  if(pressedKeys->numKeysPressed)
+	  {
+
+		  buffer[3] = charToUSBKey[pressedKeys->pressedKeys[0]];
+		  USBD_HID_SendReport(&hUsbDeviceFS, buffer, 8);
+		  HAL_Delay(100);
+		  buffer[3] = 0x00;
+		  USBD_HID_SendReport(&hUsbDeviceFS, buffer, 8);
+		  HAL_Delay(100);
+	  }
+	  HAL_Delay(10);
+
   }
   /* USER CODE END 3 */
 }
@@ -118,7 +145,8 @@ void SystemClock_Config(void)
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
   RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
 
-  /** Initializes the CPU, AHB and APB busses clocks 
+  /** Initializes the RCC Oscillators according to the specified parameters
+  * in the RCC_OscInitTypeDef structure.
   */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_MSI;
   RCC_OscInitStruct.MSIState = RCC_MSI_ON;
@@ -135,7 +163,7 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  /** Initializes the CPU, AHB and APB busses clocks 
+  /** Initializes the CPU, AHB and APB buses clocks
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
@@ -162,7 +190,7 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  /** Configure the main internal regulator output voltage 
+  /** Configure the main internal regulator output voltage
   */
   if (HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE1) != HAL_OK)
   {
@@ -246,13 +274,13 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin : COL_0_INPUT_Pin */
   GPIO_InitStruct.Pin = COL_0_INPUT_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(COL_0_INPUT_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : COL_1_INPUT_Pin COL_2_INPUT_Pin COL_3_INPUT_Pin */
   GPIO_InitStruct.Pin = COL_1_INPUT_Pin|COL_2_INPUT_Pin|COL_3_INPUT_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pins : ERROR_LED_Pin MODE_1_Pin MODE_2_Pin MODE_3_Pin */
@@ -288,8 +316,8 @@ void Error_Handler(void)
   * @param  line: assert_param error line source number
   * @retval None
   */
-void assert_failed(char *file, uint32_t line)
-{ 
+void assert_failed(uint8_t *file, uint32_t line)
+{
   /* USER CODE BEGIN 6 */
   /* User can add his own implementation to report the file name and line number,
      tex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */

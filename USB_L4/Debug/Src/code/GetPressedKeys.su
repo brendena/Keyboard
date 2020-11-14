@@ -1,0 +1,3 @@
+GetPressedKeys.c:16:6:setupUSBConversionTable	4	static
+GetPressedKeys.c:51:16:getKeyPadPressedKeys	4	static
+GetPressedKeys.c:56:6:calculatePressedKeys	16	static
